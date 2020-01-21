@@ -1,0 +1,15 @@
+name: JukeboxRegion
+version: ${project.version}
+main: us.blockbox.jukeboxregion.JukeboxRegion
+api-version: 1.13
+depend: [WorldGuard]
+softdepend: [CustomJukebox, Multiverse-Core]
+commands:
+  jr:
+    description: Main JukeboxRegion command.
+    usage: /<command> <region> [newsong]
+    aliases: [jregion,jukeboxregion]
+permissions:
+  jukeboxregion.admin:
+    description: Manage songs for WorldGuard regions.
+    default: op
